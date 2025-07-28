@@ -15,6 +15,8 @@ export default function HomePage() {
             <main className="bg-white min-h-screen flex flex-col items-center p-0">
                 <MainBanner />
 
+                {/*<PartnersBanner />*/}
+
                 {/*<div*/}
                 {/*    style={{*/}
                 {/*        backgroundColor: "#2C3C18",*/}
