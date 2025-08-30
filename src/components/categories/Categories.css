@@ -1,0 +1,77 @@
+.categories-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.categories-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.categories-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.top-row .category-card {
+  flex: 1;
+  height: 450px;
+}
+
+.bottom-row .category-card {
+  flex: 1;
+  height: 450px;
+}
+
+.category-card {
+  position: relative;
+  cursor: pointer;
+  border-radius: 0; /* острые углы */
+}
+
+.category-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.category-link {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.3s ease;
+}
+
+.category-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Наведение — стрелка чуть отходит */
+.category-link:hover .category-arrow {
+  transform: translateX(6px);
+}
+
+/* Клик — смена цвета */
+.category-link:active {
+  animation: clickColor 1,2s ease forwards;
+}
+
+@keyframes clickColor {
+  0% {
+    color: white;
+  }
+  40% {
+    color: #6B7C3E; /* зелёный */
+  }
+  100% {
+    color: #FFD700; /* жёлтый */
+  }
+}
+

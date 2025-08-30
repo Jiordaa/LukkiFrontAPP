@@ -1,19 +1,30 @@
 'use client'
 
 import MainBanner from "@/pages/homePage/components/mainBanner/MainBanner";
+import Footer from "@/components/Footer/Footer";
+import Sales from "@/components/Sales/Sales";
+import Categories from "@/components/Categories/Categories";
+import Reviews from "@/components/Reviews/Reviews";
+import Popular from "@/components/Popular/Popular";
+import LearnMore from '@/components/LearnMore/LearnMore';
+import DressWithLukki from "@/components/DressWithLukki/DressWithLukki";
+import SubscribeOffers from "@/components/SubscribeOffers/SubscribeOffers";
+import InfoBlock from "@/components/InfoBlock/InfoBlock";
 
-const boxStyle = {
+/*const boxStyle = {
     backgroundColor: "#fff",
     width: "300px",
     height: "100px",
     borderRadius: 8,
-};
+};*/
 
 
 export default function HomePage() {
     return (
-            <main className="bg-white min-h-screen flex flex-col items-center p-0">
+            <main className="bg-white min-h-screen flex flex-col items-stretch p-0">
                 <MainBanner />
+                <Footer />
+
 
                 {/*<PartnersBanner />*/}
 
@@ -36,6 +47,17 @@ export default function HomePage() {
                 {/*    <div style={boxStyle} />*/}
                 {/*    <div style={boxStyle} />*/}
                 {/*</div>*/}
+            <Sales />
+            <Categories />
+            <Reviews />
+            <Popular />
+            <LearnMore />
+             <DressWithLukki />
+              <div className="bg-green-900 text-white text-center py-6">
+                 <h2 className="font-antonio font-bold text-4xl">#DRESSWITHLUKKI</h2>
+               </div>
+             <SubscribeOffers />
+             <InfoBlock />
             </main>
     );
 }

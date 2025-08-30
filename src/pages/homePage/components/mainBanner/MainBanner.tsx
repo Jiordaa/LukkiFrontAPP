@@ -12,7 +12,7 @@ export default function MainBanner() {
             onSlideChange={() => console.log('slide change')}
         >
             <SwiperSlide>
-                <OneSlideBanner imgSrc='/banner/first-slide.png' linkHref="#" linkTitle="SHOP ALL"/>
+                <OneSlideBanner imgSrc='/banner/logo.jpg' linkHref="#" linkTitle="SHOP ALL"/>
             </SwiperSlide>
             <SwiperSlide>
                 <OneSlideBanner imgSrc='/banner/second-slide.png' linkHref="#" linkTitle="SHOP ALL"/>
@@ -23,6 +23,13 @@ export default function MainBanner() {
         </Swiper>
     );
 }
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,100 @@
+.reviews-section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.reviews-swiper {
+    position: relative;
+    width: 100%;
+}
+
+.review-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 60px;
+}
+
+.review-text {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    color: #2b2b2b;
+}
+
+.review-subtitle {
+    display: block;
+    font-size: 14px;
+    color: #4b5936;
+    margin-bottom: 10px;
+}
+
+.review-rating {
+    font-size: 18px;
+    color: #4b5936;
+    margin-bottom: 15px;
+}
+
+.review-quote {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    font-size: 14px;
+    color: #4b5936;
+}
+
+.review-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.review-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Стрелки свайпера */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #a1a893;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 16px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+    .review-slide {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .review-image {
+        order: -1;
+    }
+}

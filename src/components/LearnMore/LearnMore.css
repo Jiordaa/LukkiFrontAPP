@@ -1,0 +1,51 @@
+.learn-more-section {
+  width: 100%;
+  position: relative;
+}
+
+.learn-more-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.learn-more-bg {
+  object-fit: cover;
+}
+
+.learn-more-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.learn-more-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.learn-more-subtitle {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.learn-more-button {
+  width: 400px;
+  height: 90px;
+  font-size: 20px;
+  background: white;
+  color: #6B7C3E;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background: #6B7C3E;
+  color: white;
+}

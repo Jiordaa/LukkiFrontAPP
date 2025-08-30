@@ -24,3 +24,4 @@ export const OneSlideBanner: FC<OneSLideProps> = ({imgSrc, linkHref, linkTitle})
         </div>
     )
 }
+
